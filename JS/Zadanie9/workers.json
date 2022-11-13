@@ -1,0 +1,14 @@
+{"workers" : [
+    {"img-link" : "https://cdn.britannica.com/47/188747-050-1D34E743/Bill-Gates-2011.jpg", 
+    "name" : "JAN KOWALKI", "role" : "Product Manager", "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat cupiditate, hic error adipisci quisquam recusandae aperiam consequuntur optio esse. Ducimus dolorem vero doloribus! Numquam, amet corrupti. "},
+    {"img-link" : "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1280px-Elon_Musk_Royal_Society_%28crop2%29.jpg", 
+    "name" : "EMIL MUSIA", "role" : "SCRUM Master", "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat cupiditate, hic error adipisci quisquam recusandae aperiam consequuntur optio esse. Ducimus dolorem vero doloribus! Numquam, amet corrupti. "},
+    {"img-link" : "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/1280px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg", 
+    "name" : "MAREK CUKIER", "role" : "Team Leader", "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat cupiditate quisquam recusandae aperiam consequuntur optio esse. Ducimus dolorem vero doloribus! Numquam, amet corrupti. "},
+    {"img-link" : "https://cdn.britannica.com/56/199056-050-CCC44482/Jeff-Bezos-2017.jpg", 
+    "name" : "JONASZ BENZYNA", "role" : "Project Manager", "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat cupiditate. Ducimus dolorem vero doloribus! Numquam, amet corrupti. Quisquam recusandae aperiam consequuntur optio esse. Ducimus dolorem vero doloribus! Numquam, amet corrupti. "},
+    {"img-link" : "https://upload.wikimedia.org/wikipedia/commons/3/32/Pulitzer2018-portraits-kendrick-lamar.jpg", 
+    "name" : "KĘDZIERZYN LAMARZ", "role" : "Designer", "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat cupiditate. Ducimus dolorem vero doloribus! Numquam, amet corrupti. Quisquam recusandae aperiam consequuntur. "},
+    {"img-link" : "https://cdn.britannica.com/42/184142-050-5B50BDC2/Kim-Kardashian-2008.jpg", 
+    "name" : "KAMILA KARP", "role" : "Secretary", "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat cupiditate. Ducimus dolorem vero doloribus! Numquam, amet corrupti. Quisquam recusandae aperiam consequuntur. "}
+]}

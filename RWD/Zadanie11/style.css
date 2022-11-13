@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    background-color: #75FBFD;
+}
+
+nav {
+    width: 100%;
+}
+
+.nav-container {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+    width: 40%;
+    height: auto;
+}
+
+input[type=radio] {
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+input[type=radio]::before {
+    visibility: visible;
+    overflow: hidden;
+    content: "Pozycja 1";
+    position: relative;
+    top: 0;
+    display: block;
+    color: white;
+    text-align: left;
+    padding-left: 5%;
+    font-size: 4vh;
+    width: 90%;
+    height: 100%;
+    
+}
+
+.pos:nth-child(2) input[type=radio]::before {
+    content: "Pozycja 2";
+}
+
+
+.pos:nth-child(3) input[type=radio]::before {
+    content: "Pozycja 3";
+}
+
+
+.pos:nth-child(4) input[type=radio]::before {
+    content: "Koniec";
+}
+
+
+
+
+
+.pos-text {
+    position: absolute;
+    font-size: 4vh;
+    color: white;
+    padding-left: 5%;
+    top: 0;
+    left: 0;
+}
+
+.nav-container .pos {
+    background-color: #EA72B0;
+    width: 100%;
+    height: 25%;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-container .pos:has(input:checked) {
+    background-color: #C06260;
+    height: auto;
+}
+
+.nav-container .pos:first-child {
+    border-radius: 10px 10px 0 0;
+    
+}
+
+.nav-container .pos:last-child {
+    border-radius: 0 0 10px 10px;
+    
+}
+/* 
+.nav-container .pos:has(input:checked)::after {
+    width: 100%;
+    height: 25%;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    background-color: #C06260;
+    
+} */
+
+.nav-container ul {
+    position: relative;
+    width: 100%;
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+    font-size: 2.5vh;
+    overflow: hidden;
+    transition: max-height 5s 0 ease-in;
+}
+
+.nav-container ul li{
+    margin: 0;
+    padding: 0;
+    background-color: #3771A1;
+    height: 25%;
+    width: 90%;
+    padding-left: 10%; 
+    
+}
+
+.nav-container ul li:hover::before{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    border-left: 20px solid #75FBFD;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+
+}
+
+.nav-container ul li:hover::after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 0;
+    border-right: 20px solid #75FBFD;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+
+}
+
+.nav-container .pos input:checked + ul{
+    max-height: 500px ;
+    transition: max-height 5s ease-out ;
+}
+
+.nav-container .pos input:not(:checked) + ul{
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+
+/* .nav-container .pos ul li::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #75FBFD;
+} */
+
+
+
+
+.nav-container .pos:last-child:has(input:checked) {
+    background-color: #EA72B0;
+}
+
+.nav-container .pos input:checked + ul + .red-triangle {
+    border-top-color: #C06260;
+    display: block;
+}
+
+.nav-container .pos input + ul + .red-triangle {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 10%;
+    top:25%;
+    border-left: 15px solid transparent;
+    border-top: 30px solid #EA72B0;
+    border-right: 15px solid transparent;
+    display: none;
+}

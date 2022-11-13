@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sono', sans-serif;
+    /* cursor: none; */
+}
+
+.board{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    min-height: 800px;
+}
+
+.board > img#bg {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 0;
+}
+
+#target-container {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 7;
+    pointer-events: none;
+}
+
+#target {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 100;
+}
+
+.high-score{
+    position: absolute;
+    font-size: 3vw;
+    z-index: 3;
+    color: white;
+    top:3vh;
+    right: 10vw;
+}
+
+.zombie {
+    background-image: url('images/walkingdead.png');
+    width: 200px;
+    height: 312px;
+    background-position-x:0;
+    z-index: 5;
+    position: absolute;
+    bottom: 100px;
+}
+
+#message {
+    font-size: 10vw;
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-align: center;
+    line-height: 100vh;
+    left: 0;
+    position: absolute;
+    color: red;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+    top: -100vh;
+}
+

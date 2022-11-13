@@ -1,0 +1,20 @@
+
+#container {
+    margin-top: 4%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+section {
+    width: 70%;
+    border: 2px solid black;
+    margin: 1%;
+    padding: 1%;
+}

@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    font-size: 15px;
+}
+
+#container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.fog {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: rgb(187, 187, 187);
+    z-index: 5;
+}
+
+.bg-img {
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: .3;
+}
+
+.nav-container {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, rgba(77,77,77,.5), rgb(77, 77, 77));
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}   
+
+.logo {
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(250, 219, 19);
+    font-size: 38px;
+    letter-spacing: 10px;
+    width: auto;
+    margin-left: 5%;
+    white-space: nowrap;
+}
+
+nav {
+    display: inherit;
+    width: inherit;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.horizontal-menu {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    margin-right: 10%;
+    text-transform: uppercase;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+ul.horizontal-menu li {
+    width: auto;
+    margin-right: 5%;
+    white-space: nowrap;
+}
+
+.hamburger {
+    display: none;
+    z-index: 200;
+    position: relative;
+    width: 6%;
+    height: 50%;
+    padding:0 0%;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+    margin-right: 10%;
+}
+  
+/* Hide the browser's default checkbox */
+.hamburger input[type=checkbox] {
+
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.hamburger-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    transition: all .4s 0s linear;
+    /* transition: transform .4s .4s linear; */
+}
+
+
+
+.hamburger-mid {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    transition: transform .4s 0s linear;
+}
+
+.hamburger-bot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    transition: all .4s 0s linear;
+    /* transition: transform .4s .4s linear; */
+}
+
+.hamburger input[type=checkbox]:checked + .checkmark .hamburger-top{
+    top: 45%;
+    transform: rotate(45deg);
+}
+
+.hamburger input[type=checkbox]:checked + .checkmark .hamburger-bot{
+    bottom: 45%;
+    transform: rotate(-45deg);
+}
+
+.hamburger input[type=checkbox]:checked + .checkmark .hamburger-mid{
+    transform: rotate(-135deg);
+}
+
+
+.side-menu {
+    position: absolute;
+    right: 0;
+    top: -120vh;
+    padding-top: 20vh;
+    width: 40vw;
+    height: 100vh;
+    text-transform: uppercase;
+    font-size: 30px;
+    background-color: rgb(93, 93, 93);
+    display: flex;
+    justify-items: center;
+    transition: all .4s .2s ease-in-out;
+}
+
+.hamburger:has(input[type=checkbox]:checked) + .side-menu {
+    top: 0;
+    
+}
+
+.hamburger:has(input[type=checkbox]:not(:checked)) + .side-menu {
+    transition-delay: .7s;
+    
+}
+
+.side-menu ol {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.side-menu ol li {
+    padding: 5% 20%;
+    padding-left: 10%;
+    background-color: gray;
+    position: relative;
+    right: -100%;
+    transition-duration: 0;
+}
+
+.side-menu ol li:nth-child(1) {
+    transition: right .2s .6s linear;
+}
+
+.side-menu ol li:nth-child(2) {
+    transition: right .2s .7s linear;
+}
+
+.side-menu ol li:nth-child(3) {
+    transition: right .2s .8s linear;
+}
+
+.side-menu ol li:nth-child(4) {
+    transition: right .2s .9s linear;
+}
+
+.side-menu ol li:nth-child(5) {
+    transition: right .2s 1s linear;
+}
+
+.hamburger:has(input[type=checkbox]:checked) + .side-menu ol li {
+    right: 0;
+}
+.hamburger:has(input[type=checkbox]:not(:checked)) + .side-menu ol li:nth-child(5) {
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+}
+.hamburger:has(input[type=checkbox]:not(:checked)) + .side-menu ol li:nth-child(4) {
+    transition-delay: 0.2s;
+    transition-duration: 0.2s;
+}
+.hamburger:has(input[type=checkbox]:not(:checked)) + .side-menu ol li:nth-child(3) {
+    transition-delay: 0.3s;
+    transition-duration: 0.2s;
+}
+.hamburger:has(input[type=checkbox]:not(:checked)) + .side-menu ol li:nth-child(2) {
+    transition-delay: 0.4s;
+    transition-duration: 0.2s;
+}
+.hamburger:has(input[type=checkbox]:not(:checked)) + .side-menu ol li:nth-child(1) {
+    transition-delay: 0.5s;
+    transition-duration: 0.2s;
+}
+
+.side-menu ol li:hover {
+    background-color: rgb(57, 43, 43);
+}
+
+
+
+@media screen and (max-width: 800px) {
+    ul.horizontal-menu {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+
+}

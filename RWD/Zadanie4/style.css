@@ -1,0 +1,283 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    font-size: 15px !important;
+
+}
+
+ol .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    font-size: 12px !important;
+    margin-left: 7em;
+}
+
+.burger .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    font-size: 25px !important;
+
+}
+
+.side-container .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    font-size: 22px !important;
+}
+
+#container {
+    width: 100%;
+    display: grid;
+}
+
+
+.nav-container {
+
+    width: 100%;
+    padding: 1% 0;
+    background-color: #76B2DF;
+    display: flex;
+    color: white;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    font-size: 15px;
+}
+
+.nav-container .logo1 {
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    margin-left: 8%;
+}
+
+.nav-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 15%;
+}
+
+.nav-container > ul > li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin-right: 1em;
+    position: relative;
+}
+
+.nav-container > ul > li ol {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.nav-container > ul > li ol > li {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #76B2DF;
+    text-align: left;
+    border-top: 1px solid #76B2DF;
+    width: 10em;
+    padding: 4% 0;
+    padding-left: 1em;
+}
+
+.nav-container > ul > li ol > li:first-child {
+    border: none;
+}
+
+.nav-container > ul > li ol > li:hover {
+    color: white;
+    background-color: #76B2DF;
+}
+
+.popup {
+    position: absolute;
+    z-index: 5;
+    display: none;
+}
+
+.popup:hover {
+    position: absolute;
+    z-index: 5;
+
+}
+
+ul > li:hover .popup {
+    display: block;
+}
+
+
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 16px solid white;
+    margin-left: 3em;
+}
+
+.login {
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 0 1%;
+
+    margin-left: 15%;
+}
+
+.login:hover {
+    background-color: white;
+    color: #76B2DF;
+}
+
+.signup {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 0 1%;
+    color: #76B2DF;
+    margin-left: 1%;
+    margin-right: 4em;
+}
+
+.signup:hover {
+    background-color: #76B2DF;
+    color: white;
+}
+
+.burger {
+    align-self:flex-end;
+    margin-right: 10%;
+    display: none;
+}
+
+.bg {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.5;
+    
+}
+
+.fog {
+    background-color: #48a2f6;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    position: relative;
+}
+
+
+.side-container {
+    background-color: #074279;
+    color: white;
+    position: absolute;
+    z-index: 6;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+
+}
+
+.side-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding: 20% 0%;
+    font-size: 30px;
+
+}
+
+.side-container ul li{
+    padding-left: 1em;
+}
+
+.logo {
+    word-wrap: nowrap;
+
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .burger:hover .side-container {
+
+        -webkit-transition: width 1s ease-in-out;
+        -moz-transition: width 1s ease-in-out;
+        -o-transition: width 1s ease-in-out;
+        transition: width 1s ease-in-out;
+        height: 100%;
+        width: 40%;
+
+    }
+
+    .burger .side-container {
+
+        -webkit-transition: width 1s ease-in-out;
+        -moz-transition: width 1s ease-in-out;
+        -o-transition: width 1s ease-in-out;
+        transition: width 1s ease-in-out;
+        height: 100%;
+        width: 0%;
+    }
+
+    .nav-container{
+        align-content: center;
+        justify-content: space-between;
+
+
+    }   
+
+    .nav-container h3 {
+        margin-left: 40%;
+        
+    }
+
+    .burger {
+        display: block;
+        margin-right: 0;
+        align-self: center;
+        margin-right: 5%;
+    }
+
+    .nav-container > ul {
+        display: none;
+    }
+    
+    .signup {
+        display: none;
+    }
+
+    .login {
+        display: none;
+    }
+
+}

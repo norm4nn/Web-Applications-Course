@@ -1,0 +1,41 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+}
+
+#boundaries {
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid rgb(197, 197, 197);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 30px;
+    /* line-height: 50vh; */
+}
+
+#msg {
+    pointer-events: none;
+}
+
+#circle {
+    padding: 5%;
+    background-color: red;
+    position: absolute;
+    z-index: -1;
+    border-radius: 300px;
+    pointer-events: none;
+    transition: .5s ease-in-out;
+    top:0%;
+    left: 0%;
+}

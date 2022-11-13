@@ -1,0 +1,153 @@
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48,
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin-top: 5%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.card {
+    flex: 0 0 31%;
+    box-shadow: 0px 0px 5px 5px rgba(202, 201, 201, 0.2);
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+
+.city-img1 {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.city-img2 {
+    width: 100%;
+    height: auto;
+    display: none;
+    margin: 0;
+}
+
+
+.bottom-card {
+
+    background-color: white;
+    margin: 0;
+    padding: 6%;
+    height: auto;
+    padding-bottom: 20%;
+}
+
+h2 {
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    padding-top: 10%;
+    padding-bottom: 0;
+}
+
+h3 {
+    font-weight: 400;
+    color: red;
+    margin: 0;
+
+}
+
+.card-content {
+    font-size: 15px;
+    color: #8D8E8D;
+    margin: 0;
+    padding-top: 6%;
+
+}
+
+.line {
+    border: 0;
+    border-top: 2px solid #F6F7F7;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
+
+.card-button {
+    background-color: #D7726F;
+    border: 3px solid #D7726F;
+    color: whitesmoke;
+    width: 38%;
+    padding: 3%;
+    text-align: center;
+    float: left;
+
+}
+
+.card-side {
+    float: left;
+    font-size: 15px;
+    margin-left: 10%;
+    color: #8D8E8D;
+}
+
+.material-symbols-outlined {
+    font-size: 15px !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        flex: 0 0 41%;
+    }
+
+    .city-img1 {
+        width: 100%;
+        height: auto;
+        display: none;
+        margin: 0;
+    }
+    
+    .city-img2 {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0;
+    }
+    
+}
+
+
+@media screen and (max-width: 800px) {
+    .card {
+        flex: 0 0 75%;
+    }
+
+    .city-img1 {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0;
+    }
+    
+    .city-img2 {
+        width: 100%;
+        height: auto;
+        display: none;
+        margin: 0;
+    }
+    
+}
